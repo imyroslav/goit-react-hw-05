@@ -3,6 +3,7 @@ import css from "./App.module.css";
 import Navigation from "../Navigation/Navigation";
 import HomePage from "../../pages/HomePage/HomePage";
 import MoviesPage from "../../pages/MoviesPage/MoviesPage";
+import NotFoundPage from "../../pages/NotFoundPage/NotFoundPage";
 
 export default function App() {
 
@@ -17,7 +18,7 @@ export default function App() {
 
                     <Route path="/" element={<HomePage />} />
                     <Route path="/movies" element={<MoviesPage />} />
-                    <Route path="*" element={<div>404 Not Found Page</div>} />
+                    <Route path="*" element={<NotFoundPage />} />
 
                 </Routes>
 

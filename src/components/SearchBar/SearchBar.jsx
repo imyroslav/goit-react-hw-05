@@ -19,7 +19,7 @@ export default function SearchBar({ onSearch }) {
         >
             <Form className={css.form}>
                 <div>
-                    <label>Moviename</label>
+                    <label>Enter movie name, please</label>
                     <Field
                         className={css.field}
                         name="moviename"
