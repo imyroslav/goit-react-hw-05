@@ -1,12 +1,12 @@
 import css from "./HomePage.module.css";
-import MovieTrends from "../../components/MovieTrends/MovieTrends";
+import MovieList from "../../components/MovieList/MovieList"
 
 
 export default function HomePage() {
     return (
         <div>
             <h2 className={css.title}>Trending today</h2>
-            <MovieTrends />
+            <MovieList  />
         </div>
     )
 }
