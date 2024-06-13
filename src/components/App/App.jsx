@@ -1,9 +1,12 @@
 import { Route, Routes } from "react-router-dom";
+
 import css from "./App.module.css";
 import Navigation from "../Navigation/Navigation";
 import HomePage from "../../pages/HomePage/HomePage";
 import MoviesPage from "../../pages/MoviesPage/MoviesPage";
+import MovieList from "../MovieList/MovieList";
 import NotFoundPage from "../../pages/NotFoundPage/NotFoundPage";
+
 
 export default function App() {
 
@@ -16,7 +19,10 @@ export default function App() {
                 
                 <Routes>
 
-                    <Route path="/" element={<HomePage />} />
+                    <Route path="/" element={<HomePage />}>
+                        <Route path="MovieList" element={<MovieList />} />
+                    </Route>
+
                     <Route path="/movies" element={<MoviesPage />} />
                     <Route path="*" element={<NotFoundPage />} />
 

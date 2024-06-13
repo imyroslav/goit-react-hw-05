@@ -8,5 +8,6 @@ axios.defaults.headers.common["accept"] = "application/json";
 
 export const getTrendingMovies = async () => {
     const response = await axios.get("/trending/movie/day")
+    // console.log(response)
     return response;
 }
